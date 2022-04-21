@@ -10,11 +10,12 @@ typedef struct node node;
 int main(void){
 	nodePtr first = NULL,third = NULL, second;
 	first = malloc(sizeof(node));
-	third = malloc(sizeof(node));
-	first->next = third;
+	third = mallc(sizeof(node));
+	
 	first->value = 24;
-	third->next = NULL;
+	first->next = third;
 	third->value = 25;
+	third->next = NULL;
 	while(1)
 	{
 		second = first;
